@@ -4,8 +4,8 @@ import requests
 import winsound
 from config2 import open_weather_token
 
-sr = speech_recognition.Recognizer()    #
-sr.pause_threshold = 0.5        #
+sr = speech_recognition.Recognizer()    # создаем объект класса reocgnize
+sr.pause_threshold = 0.5        # отвечает за время которое наш текст будет принят
 
 
 def get_weather(city, open_weather_token):
@@ -46,7 +46,7 @@ def get_weather(city, open_weather_token):
 def answer(a):
     engine = pyttsx3.init()
 
-    engine.setProperty('rate', 150)
+    engine.setProperty('rate', 200)         # скорость речи
     engine.setProperty('volume', 1)         # громкость ответа
 
     engine.say(d[a])                        # что будет говорить, выбираем из словаря
