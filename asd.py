@@ -1,7 +1,7 @@
-import speech_recognition
-import pyttsx3
-import requests
-import winsound
+import speech_recognition   # библиотека для распознования и анализа речи
+import pyttsx3              # библиотека позволяющая преобразовывать текст в речь
+import requests             # библиотека для http запросов
+import winsound             # библиотека для запуска музыки
 from config2 import open_weather_token
 
 sr = speech_recognition.Recognizer()    # создаем объект класса reocgnize
